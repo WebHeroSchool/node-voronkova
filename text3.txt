@@ -1,0 +1,4 @@
+01.js
+C:\Users\User\Desktop\проекты\node-voronkova\text.txt
+one-task.js
+foo\bar
