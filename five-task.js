@@ -1,10 +1,10 @@
 const fs = require('fs');
 
 const file = 'text4-1.txt';
-const initalText = fs.readFileSync(file).toString().split(/\r\n/);
+const initalText = fs.readFileSync(file).toString().split(/\r?\n/);
 
 fs.watchFile(file, () => {
-  let nowText = fs.readFileSync(file).toString().split(/\r\n/);
+  let nowText = fs.readFileSync(file).toString().split(/\r?\n/);
 
   console.log('Файл изменился');
   initalText.forEach((item, index) => {

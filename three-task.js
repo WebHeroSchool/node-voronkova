@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 const waysStr = fs.readFileSync('text3.txt').toString();
-const waysArr = waysStr.split(/\r\n/);
+const waysArr = waysStr.split(/\r?\n/);
+console.log(waysArr);
 
 waysArr.forEach(way => {
     if (fs.existsSync(way)) {
